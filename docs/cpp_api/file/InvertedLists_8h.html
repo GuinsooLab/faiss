@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>File InvertedLists.h &mdash; Faiss  documentation</title>
@@ -13,10 +13,10 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Faiss
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Faiss
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -191,9 +195,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../filelist.html">File list</a> &raquo;</li>
-      <li>File InvertedLists.h</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../filelist.html">File list</a></li>
+      <li class="breadcrumb-item active">File InvertedLists.h</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/cpp_api/file/InvertedLists_8h.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -204,7 +208,7 @@
            <div itemprop="articleBody">
              
   <section id="file-invertedlists-h">
-<h1>File InvertedLists.h<a class="headerlink" href="#file-invertedlists-h" title="Permalink to this headline"></a></h1>
+<h1>File InvertedLists.h<a class="headerlink" href="#file-invertedlists-h" title="Permalink to this heading"></a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
@@ -264,7 +268,7 @@
 <span id="_CPPv3NK5faiss18ArrayInvertedLists9get_codesE6size_t"></span><span id="_CPPv2NK5faiss18ArrayInvertedLists9get_codesE6size_t"></span><span id="faiss::ArrayInvertedLists::get_codes__sC"></span><span class="target" id="structfaiss_1_1ArrayInvertedLists_1a5026cc84a2db06d4741a4797ccd4ed86"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_codes</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss18ArrayInvertedLists9get_codesE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the codes for an inverted list must be released by release_codes</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>codes size list_size * code_size </p>
 </dd>
 </dl>
@@ -275,7 +279,7 @@
 <span id="_CPPv3NK5faiss18ArrayInvertedLists7get_idsE6size_t"></span><span id="_CPPv2NK5faiss18ArrayInvertedLists7get_idsE6size_t"></span><span id="faiss::ArrayInvertedLists::get_ids__sC"></span><span class="target" id="structfaiss_1_1ArrayInvertedLists_1ad2e8766536ff81c33d9e7c577fde8110"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss18ArrayInvertedLists5idx_tE" title="faiss::ArrayInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_ids</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss18ArrayInvertedLists7get_idsE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the ids for an inverted list must be released by release_ids</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ids size list_size </p>
 </dd>
 </dl>
@@ -317,7 +321,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss18ArrayInvertedLists13get_single_idE6size_t6size_t">
 <span id="_CPPv3NK5faiss18ArrayInvertedLists13get_single_idE6size_t6size_t"></span><span id="_CPPv2NK5faiss18ArrayInvertedLists13get_single_idE6size_t6size_t"></span><span id="faiss::ArrayInvertedLists::get_single_id__s.sC"></span><span class="target" id="structfaiss_1_1InvertedLists_1ac1fb72410cefa4f4d28ec90677c02ab3"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss18ArrayInvertedLists5idx_tE" title="faiss::ArrayInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_single_id</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss18ArrayInvertedLists13get_single_idE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single id in an inverted list </p>
 </dd>
 </dl>
@@ -327,7 +331,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss18ArrayInvertedLists15get_single_codeE6size_t6size_t">
 <span id="_CPPv3NK5faiss18ArrayInvertedLists15get_single_codeE6size_t6size_t"></span><span id="_CPPv2NK5faiss18ArrayInvertedLists15get_single_codeE6size_t6size_t"></span><span id="faiss::ArrayInvertedLists::get_single_code__s.sC"></span><span class="target" id="structfaiss_1_1InvertedLists_1a8d3382c2a672340abd227c00cf84ad42"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_single_code</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss18ArrayInvertedLists15get_single_codeE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single code in an inverted list (should be deallocated with release_codes) </p>
 </dd>
 </dl>
@@ -450,7 +454,7 @@
 <span id="_CPPv3NK5faiss19HStackInvertedLists9get_codesE6size_t"></span><span id="_CPPv2NK5faiss19HStackInvertedLists9get_codesE6size_t"></span><span id="faiss::HStackInvertedLists::get_codes__sC"></span><span class="target" id="structfaiss_1_1HStackInvertedLists_1a78f3c820064e879c3a4572a8afcbaed1"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_codes</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss19HStackInvertedLists9get_codesE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the codes for an inverted list must be released by release_codes</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>codes size list_size * code_size </p>
 </dd>
 </dl>
@@ -461,7 +465,7 @@
 <span id="_CPPv3NK5faiss19HStackInvertedLists7get_idsE6size_t"></span><span id="_CPPv2NK5faiss19HStackInvertedLists7get_idsE6size_t"></span><span id="faiss::HStackInvertedLists::get_ids__sC"></span><span class="target" id="structfaiss_1_1HStackInvertedLists_1a04d5951f07bbc1b9ef0274e585c528d4"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss19HStackInvertedLists5idx_tE" title="faiss::HStackInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_ids</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss19HStackInvertedLists7get_idsE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the ids for an inverted list must be released by release_ids</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ids size list_size </p>
 </dd>
 </dl>
@@ -489,7 +493,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss19HStackInvertedLists13get_single_idE6size_t6size_t">
 <span id="_CPPv3NK5faiss19HStackInvertedLists13get_single_idE6size_t6size_t"></span><span id="_CPPv2NK5faiss19HStackInvertedLists13get_single_idE6size_t6size_t"></span><span id="faiss::HStackInvertedLists::get_single_id__s.sC"></span><span class="target" id="structfaiss_1_1HStackInvertedLists_1a87091687f5fcc023f1db4c0f8c2c36da"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss19HStackInvertedLists5idx_tE" title="faiss::HStackInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_single_id</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss19HStackInvertedLists13get_single_idE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single id in an inverted list </p>
 </dd>
 </dl>
@@ -499,7 +503,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss19HStackInvertedLists15get_single_codeE6size_t6size_t">
 <span id="_CPPv3NK5faiss19HStackInvertedLists15get_single_codeE6size_t6size_t"></span><span id="_CPPv2NK5faiss19HStackInvertedLists15get_single_codeE6size_t6size_t"></span><span id="faiss::HStackInvertedLists::get_single_code__s.sC"></span><span class="target" id="structfaiss_1_1HStackInvertedLists_1aa9a0eeb80347da174feb2302a74c188c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_single_code</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss19HStackInvertedLists15get_single_codeE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single code in an inverted list (should be deallocated with release_codes) </p>
 </dd>
 </dl>
@@ -630,7 +634,7 @@
 <span id="_CPPv3NK5faiss13InvertedLists9get_codesE6size_t"></span><span id="_CPPv2NK5faiss13InvertedLists9get_codesE6size_t"></span><span id="faiss::InvertedLists::get_codes__sC"></span><span class="target" id="structfaiss_1_1InvertedLists_1a60b12f9efe940b617a8380adceef4032"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_codes</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5faiss13InvertedLists9get_codesE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the codes for an inverted list must be released by release_codes</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>codes size list_size * code_size </p>
 </dd>
 </dl>
@@ -641,7 +645,7 @@
 <span id="_CPPv3NK5faiss13InvertedLists7get_idsE6size_t"></span><span id="_CPPv2NK5faiss13InvertedLists7get_idsE6size_t"></span><span id="faiss::InvertedLists::get_ids__sC"></span><span class="target" id="structfaiss_1_1InvertedLists_1a3ab6b389d8d85c5fbf23889064df7e95"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss13InvertedLists5idx_tE" title="faiss::InvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_ids</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5faiss13InvertedLists7get_idsE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the ids for an inverted list must be released by release_ids</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ids size list_size </p>
 </dd>
 </dl>
@@ -663,7 +667,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss13InvertedLists13get_single_idE6size_t6size_t">
 <span id="_CPPv3NK5faiss13InvertedLists13get_single_idE6size_t6size_t"></span><span id="_CPPv2NK5faiss13InvertedLists13get_single_idE6size_t6size_t"></span><span id="faiss::InvertedLists::get_single_id__s.sC"></span><span class="target" id="structfaiss_1_1InvertedLists_1ac1fb72410cefa4f4d28ec90677c02ab3"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss13InvertedLists5idx_tE" title="faiss::InvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_single_id</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss13InvertedLists13get_single_idE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single id in an inverted list </p>
 </dd>
 </dl>
@@ -673,7 +677,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss13InvertedLists15get_single_codeE6size_t6size_t">
 <span id="_CPPv3NK5faiss13InvertedLists15get_single_codeE6size_t6size_t"></span><span id="_CPPv2NK5faiss13InvertedLists15get_single_codeE6size_t6size_t"></span><span id="faiss::InvertedLists::get_single_code__s.sC"></span><span class="target" id="structfaiss_1_1InvertedLists_1a8d3382c2a672340abd227c00cf84ad42"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_single_code</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss13InvertedLists15get_single_codeE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single code in an inverted list (should be deallocated with release_codes) </p>
 </dd>
 </dl>
@@ -897,7 +901,7 @@
 <span id="_CPPv3NK5faiss19MaskedInvertedLists9get_codesE6size_t"></span><span id="_CPPv2NK5faiss19MaskedInvertedLists9get_codesE6size_t"></span><span id="faiss::MaskedInvertedLists::get_codes__sC"></span><span class="target" id="structfaiss_1_1MaskedInvertedLists_1aaee0fe78a47957d1397302877714bafd"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_codes</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss19MaskedInvertedLists9get_codesE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the codes for an inverted list must be released by release_codes</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>codes size list_size * code_size </p>
 </dd>
 </dl>
@@ -908,7 +912,7 @@
 <span id="_CPPv3NK5faiss19MaskedInvertedLists7get_idsE6size_t"></span><span id="_CPPv2NK5faiss19MaskedInvertedLists7get_idsE6size_t"></span><span id="faiss::MaskedInvertedLists::get_ids__sC"></span><span class="target" id="structfaiss_1_1MaskedInvertedLists_1aa877bb829e7dfdd0a8fe80e1a3484955"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss19MaskedInvertedLists5idx_tE" title="faiss::MaskedInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_ids</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss19MaskedInvertedLists7get_idsE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the ids for an inverted list must be released by release_ids</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ids size list_size </p>
 </dd>
 </dl>
@@ -930,7 +934,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss19MaskedInvertedLists13get_single_idE6size_t6size_t">
 <span id="_CPPv3NK5faiss19MaskedInvertedLists13get_single_idE6size_t6size_t"></span><span id="_CPPv2NK5faiss19MaskedInvertedLists13get_single_idE6size_t6size_t"></span><span id="faiss::MaskedInvertedLists::get_single_id__s.sC"></span><span class="target" id="structfaiss_1_1MaskedInvertedLists_1af0d9f7b61caef91e30124b0f7a9d44b9"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss19MaskedInvertedLists5idx_tE" title="faiss::MaskedInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_single_id</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss19MaskedInvertedLists13get_single_idE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single id in an inverted list </p>
 </dd>
 </dl>
@@ -940,7 +944,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss19MaskedInvertedLists15get_single_codeE6size_t6size_t">
 <span id="_CPPv3NK5faiss19MaskedInvertedLists15get_single_codeE6size_t6size_t"></span><span id="_CPPv2NK5faiss19MaskedInvertedLists15get_single_codeE6size_t6size_t"></span><span id="faiss::MaskedInvertedLists::get_single_code__s.sC"></span><span class="target" id="structfaiss_1_1MaskedInvertedLists_1a53f2748924f85f77e24b9309fdecfba2"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_single_code</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss19MaskedInvertedLists15get_single_codeE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single code in an inverted list (should be deallocated with release_codes) </p>
 </dd>
 </dl>
@@ -1092,7 +1096,7 @@
 <span id="_CPPv3NK5faiss21ReadOnlyInvertedLists9get_codesE6size_t"></span><span id="_CPPv2NK5faiss21ReadOnlyInvertedLists9get_codesE6size_t"></span><span id="faiss::ReadOnlyInvertedLists::get_codes__sC"></span><span class="target" id="structfaiss_1_1InvertedLists_1a60b12f9efe940b617a8380adceef4032"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_codes</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5faiss21ReadOnlyInvertedLists9get_codesE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the codes for an inverted list must be released by release_codes</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>codes size list_size * code_size </p>
 </dd>
 </dl>
@@ -1103,7 +1107,7 @@
 <span id="_CPPv3NK5faiss21ReadOnlyInvertedLists7get_idsE6size_t"></span><span id="_CPPv2NK5faiss21ReadOnlyInvertedLists7get_idsE6size_t"></span><span id="faiss::ReadOnlyInvertedLists::get_ids__sC"></span><span class="target" id="structfaiss_1_1InvertedLists_1a3ab6b389d8d85c5fbf23889064df7e95"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss21ReadOnlyInvertedLists5idx_tE" title="faiss::ReadOnlyInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_ids</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK5faiss21ReadOnlyInvertedLists7get_idsE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the ids for an inverted list must be released by release_ids</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ids size list_size </p>
 </dd>
 </dl>
@@ -1125,7 +1129,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss21ReadOnlyInvertedLists13get_single_idE6size_t6size_t">
 <span id="_CPPv3NK5faiss21ReadOnlyInvertedLists13get_single_idE6size_t6size_t"></span><span id="_CPPv2NK5faiss21ReadOnlyInvertedLists13get_single_idE6size_t6size_t"></span><span id="faiss::ReadOnlyInvertedLists::get_single_id__s.sC"></span><span class="target" id="structfaiss_1_1InvertedLists_1ac1fb72410cefa4f4d28ec90677c02ab3"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss21ReadOnlyInvertedLists5idx_tE" title="faiss::ReadOnlyInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_single_id</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss21ReadOnlyInvertedLists13get_single_idE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single id in an inverted list </p>
 </dd>
 </dl>
@@ -1135,7 +1139,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss21ReadOnlyInvertedLists15get_single_codeE6size_t6size_t">
 <span id="_CPPv3NK5faiss21ReadOnlyInvertedLists15get_single_codeE6size_t6size_t"></span><span id="_CPPv2NK5faiss21ReadOnlyInvertedLists15get_single_codeE6size_t6size_t"></span><span id="faiss::ReadOnlyInvertedLists::get_single_code__s.sC"></span><span class="target" id="structfaiss_1_1InvertedLists_1a8d3382c2a672340abd227c00cf84ad42"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_single_code</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss21ReadOnlyInvertedLists15get_single_codeE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single code in an inverted list (should be deallocated with release_codes) </p>
 </dd>
 </dl>
@@ -1219,7 +1223,7 @@
 <span id="_CPPv3N5faiss18SliceInvertedListsE"></span><span id="_CPPv2N5faiss18SliceInvertedListsE"></span><span id="faiss::SliceInvertedLists"></span><span class="target" id="structfaiss_1_1SliceInvertedLists"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SliceInvertedLists</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss21ReadOnlyInvertedListsE" title="faiss::ReadOnlyInvertedLists"><span class="n"><span class="pre">ReadOnlyInvertedLists</span></span></a><a class="headerlink" href="#_CPPv4N5faiss18SliceInvertedListsE" title="Permalink to this definition"></a><br /></dt>
 <dd><div class="docutils container">
 <em>#include &lt;InvertedLists.h&gt;</em></div>
-<p>vertical slice of indexes in another <a class="reference internal" href="../struct/structfaiss_1_1InvertedLists.html#structfaiss_1_1InvertedLists"><span class="std std-ref">InvertedLists</span></a> </p>
+<p>vertical slice of indexes in another <a class="reference internal" href="../struct/structfaiss_1_1InvertedLists.html#structfaiss_1_1InvertedLists"><span class="std std-ref">InvertedLists</span></a></p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
 <dl class="cpp type">
@@ -1246,7 +1250,7 @@
 <span id="_CPPv3NK5faiss18SliceInvertedLists9get_codesE6size_t"></span><span id="_CPPv2NK5faiss18SliceInvertedLists9get_codesE6size_t"></span><span id="faiss::SliceInvertedLists::get_codes__sC"></span><span class="target" id="structfaiss_1_1SliceInvertedLists_1a7aa723c6bcbf9a1d030958f8958f3d19"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_codes</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss18SliceInvertedLists9get_codesE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the codes for an inverted list must be released by release_codes</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>codes size list_size * code_size </p>
 </dd>
 </dl>
@@ -1257,7 +1261,7 @@
 <span id="_CPPv3NK5faiss18SliceInvertedLists7get_idsE6size_t"></span><span id="_CPPv2NK5faiss18SliceInvertedLists7get_idsE6size_t"></span><span id="faiss::SliceInvertedLists::get_ids__sC"></span><span class="target" id="structfaiss_1_1SliceInvertedLists_1a8b9425c0018e6a5a1827da1624fdff56"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss18SliceInvertedLists5idx_tE" title="faiss::SliceInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_ids</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss18SliceInvertedLists7get_idsE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the ids for an inverted list must be released by release_ids</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ids size list_size </p>
 </dd>
 </dl>
@@ -1278,7 +1282,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss18SliceInvertedLists13get_single_idE6size_t6size_t">
 <span id="_CPPv3NK5faiss18SliceInvertedLists13get_single_idE6size_t6size_t"></span><span id="_CPPv2NK5faiss18SliceInvertedLists13get_single_idE6size_t6size_t"></span><span id="faiss::SliceInvertedLists::get_single_id__s.sC"></span><span class="target" id="structfaiss_1_1SliceInvertedLists_1a929db2bf665fa28d7085fde76d0a371f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss18SliceInvertedLists5idx_tE" title="faiss::SliceInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_single_id</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss18SliceInvertedLists13get_single_idE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single id in an inverted list </p>
 </dd>
 </dl>
@@ -1288,7 +1292,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss18SliceInvertedLists15get_single_codeE6size_t6size_t">
 <span id="_CPPv3NK5faiss18SliceInvertedLists15get_single_codeE6size_t6size_t"></span><span id="_CPPv2NK5faiss18SliceInvertedLists15get_single_codeE6size_t6size_t"></span><span id="faiss::SliceInvertedLists::get_single_code__s.sC"></span><span class="target" id="structfaiss_1_1SliceInvertedLists_1a715f660a511801dc0d542159e5b2083c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_single_code</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss18SliceInvertedLists15get_single_codeE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single code in an inverted list (should be deallocated with release_codes) </p>
 </dd>
 </dl>
@@ -1440,7 +1444,7 @@
 <span id="_CPPv3NK5faiss22StopWordsInvertedLists9get_codesE6size_t"></span><span id="_CPPv2NK5faiss22StopWordsInvertedLists9get_codesE6size_t"></span><span id="faiss::StopWordsInvertedLists::get_codes__sC"></span><span class="target" id="structfaiss_1_1StopWordsInvertedLists_1aa9d8a3c634bd3f7a0c1ae94d13677a9f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_codes</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss22StopWordsInvertedLists9get_codesE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the codes for an inverted list must be released by release_codes</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>codes size list_size * code_size </p>
 </dd>
 </dl>
@@ -1451,7 +1455,7 @@
 <span id="_CPPv3NK5faiss22StopWordsInvertedLists7get_idsE6size_t"></span><span id="_CPPv2NK5faiss22StopWordsInvertedLists7get_idsE6size_t"></span><span id="faiss::StopWordsInvertedLists::get_ids__sC"></span><span class="target" id="structfaiss_1_1StopWordsInvertedLists_1a9114366e16bf32cce7c4872d8a2705f8"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss22StopWordsInvertedLists5idx_tE" title="faiss::StopWordsInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_ids</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss22StopWordsInvertedLists7get_idsE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the ids for an inverted list must be released by release_ids</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ids size list_size </p>
 </dd>
 </dl>
@@ -1473,7 +1477,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss22StopWordsInvertedLists13get_single_idE6size_t6size_t">
 <span id="_CPPv3NK5faiss22StopWordsInvertedLists13get_single_idE6size_t6size_t"></span><span id="_CPPv2NK5faiss22StopWordsInvertedLists13get_single_idE6size_t6size_t"></span><span id="faiss::StopWordsInvertedLists::get_single_id__s.sC"></span><span class="target" id="structfaiss_1_1StopWordsInvertedLists_1a620a47c96baabbcf3077071651f6e658"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss22StopWordsInvertedLists5idx_tE" title="faiss::StopWordsInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_single_id</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss22StopWordsInvertedLists13get_single_idE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single id in an inverted list </p>
 </dd>
 </dl>
@@ -1483,7 +1487,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss22StopWordsInvertedLists15get_single_codeE6size_t6size_t">
 <span id="_CPPv3NK5faiss22StopWordsInvertedLists15get_single_codeE6size_t6size_t"></span><span id="_CPPv2NK5faiss22StopWordsInvertedLists15get_single_codeE6size_t6size_t"></span><span id="faiss::StopWordsInvertedLists::get_single_code__s.sC"></span><span class="target" id="structfaiss_1_1StopWordsInvertedLists_1a3d6b0c5dc84832f1127b4667fb14f8f6"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_single_code</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss22StopWordsInvertedLists15get_single_codeE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single code in an inverted list (should be deallocated with release_codes) </p>
 </dd>
 </dl>
@@ -1617,7 +1621,7 @@
 <span id="_CPPv3NK5faiss19VStackInvertedLists9get_codesE6size_t"></span><span id="_CPPv2NK5faiss19VStackInvertedLists9get_codesE6size_t"></span><span id="faiss::VStackInvertedLists::get_codes__sC"></span><span class="target" id="structfaiss_1_1VStackInvertedLists_1a8edd0cf33ef00b46e9c72115ff46cf0c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_codes</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss19VStackInvertedLists9get_codesE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the codes for an inverted list must be released by release_codes</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>codes size list_size * code_size </p>
 </dd>
 </dl>
@@ -1628,7 +1632,7 @@
 <span id="_CPPv3NK5faiss19VStackInvertedLists7get_idsE6size_t"></span><span id="_CPPv2NK5faiss19VStackInvertedLists7get_idsE6size_t"></span><span id="faiss::VStackInvertedLists::get_ids__sC"></span><span class="target" id="structfaiss_1_1VStackInvertedLists_1a2f39dbd83196f10e37308c1efb6a5787"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss19VStackInvertedLists5idx_tE" title="faiss::VStackInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_ids</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss19VStackInvertedLists7get_idsE6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>get the ids for an inverted list must be released by release_ids</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ids size list_size </p>
 </dd>
 </dl>
@@ -1650,7 +1654,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss19VStackInvertedLists13get_single_idE6size_t6size_t">
 <span id="_CPPv3NK5faiss19VStackInvertedLists13get_single_idE6size_t6size_t"></span><span id="_CPPv2NK5faiss19VStackInvertedLists13get_single_idE6size_t6size_t"></span><span id="faiss::VStackInvertedLists::get_single_id__s.sC"></span><span class="target" id="structfaiss_1_1VStackInvertedLists_1a568b36928c391086da14f36eaf005fea"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss19VStackInvertedLists5idx_tE" title="faiss::VStackInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_single_id</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss19VStackInvertedLists13get_single_idE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single id in an inverted list </p>
 </dd>
 </dl>
@@ -1660,7 +1664,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss19VStackInvertedLists15get_single_codeE6size_t6size_t">
 <span id="_CPPv3NK5faiss19VStackInvertedLists15get_single_codeE6size_t6size_t"></span><span id="_CPPv2NK5faiss19VStackInvertedLists15get_single_codeE6size_t6size_t"></span><span id="faiss::VStackInvertedLists::get_single_code__s.sC"></span><span class="target" id="structfaiss_1_1VStackInvertedLists_1a7cda72ee7f10f35defd771bd51e2edde"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_single_code</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss19VStackInvertedLists15get_single_codeE6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single code in an inverted list (should be deallocated with release_codes) </p>
 </dd>
 </dl>

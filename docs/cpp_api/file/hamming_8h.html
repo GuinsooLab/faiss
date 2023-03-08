@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>File hamming.h &mdash; Faiss  documentation</title>
@@ -13,10 +13,10 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Faiss
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Faiss
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -191,9 +195,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../filelist.html">File list</a> &raquo;</li>
-      <li>File hamming.h</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../filelist.html">File list</a></li>
+      <li class="breadcrumb-item active">File hamming.h</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/cpp_api/file/hamming_8h.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -204,7 +208,7 @@
            <div itemprop="articleBody">
              
   <section id="file-hamming-h">
-<h1>File hamming.h<a class="headerlink" href="#file-hamming-h" title="Permalink to this headline"></a></h1>
+<h1>File hamming.h<a class="headerlink" href="#file-hamming-h" title="Permalink to this heading"></a></h1>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-typedefs">Typedefs</p>
 <dl class="cpp type">
@@ -272,7 +276,7 @@
 <span id="_CPPv3N5faiss8hammingsEPK7uint8_tPK7uint8_t6size_t6size_t6size_tP8hamdis_t"></span><span id="_CPPv2N5faiss8hammingsEPK7uint8_tPK7uint8_t6size_t6size_t6size_tP8hamdis_t"></span><span id="faiss::hammings__uint8_tCP.uint8_tCP.s.s.s.hamdis_tP"></span><span class="target" id="namespacefaiss_1a0832c5ab58f4d1a340b0bde273c5b501"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hammings</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">a</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">b</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">na</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nb</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nbytespercode</span></span>, <a class="reference internal" href="#_CPPv48hamdis_t" title="hamdis_t"><span class="n"><span class="pre">hamdis_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">dis</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss8hammingsEPK7uint8_tPK7uint8_t6size_t6size_t6size_tP8hamdis_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Compute a set of Hamming distances between na and nb binary vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> – size na * nbytespercode </p></li>
 <li><p><strong>b</strong> – size nb * nbytespercode </p></li>
@@ -288,7 +292,7 @@
 <span id="_CPPv3N5faiss15hammings_knn_hcEP19int_maxheap_array_tPK7uint8_tPK7uint8_t6size_t6size_ti"></span><span id="_CPPv2N5faiss15hammings_knn_hcEP19int_maxheap_array_tPK7uint8_tPK7uint8_t6size_t6size_ti"></span><span id="faiss::hammings_knn_hc__int_maxheap_array_tP.uint8_tCP.uint8_tCP.s.s.i"></span><span class="target" id="namespacefaiss_1a111b1ab3b50bcd06d29c588122811477"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hammings_knn_hc</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="Heap_8h.html#_CPPv4N5faiss19int_maxheap_array_tE" title="faiss::int_maxheap_array_t"><span class="n"><span class="pre">int_maxheap_array_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ha</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">a</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">b</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nb</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ncodes</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ordered</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss15hammings_knn_hcEP19int_maxheap_array_tPK7uint8_tPK7uint8_t6size_t6size_ti" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Return the k smallest Hamming distances for a set of binary query vectors, using a max heap. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> – queries, size ha-&gt;nh * ncodes </p></li>
 <li><p><strong>b</strong> – database, size nb * ncodes </p></li>
@@ -310,7 +314,7 @@
 <span id="_CPPv3N5faiss15hammings_knn_mcEPK7uint8_tPK7uint8_t6size_t6size_t6size_t6size_tP7int32_tP7int64_t"></span><span id="_CPPv2N5faiss15hammings_knn_mcEPK7uint8_tPK7uint8_t6size_t6size_t6size_t6size_tP7int32_tP7int64_t"></span><span id="faiss::hammings_knn_mc__uint8_tCP.uint8_tCP.s.s.s.s.int32_tP.int64_tP"></span><span class="target" id="namespacefaiss_1a7910c770df07bd8b6168ece7f5ff92ca"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hammings_knn_mc</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">a</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">b</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">na</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nb</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ncodes</span></span>, <span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distances</span></span>, <span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">labels</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss15hammings_knn_mcEPK7uint8_tPK7uint8_t6size_t6size_t6size_t6size_tP7int32_tP7int64_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Return the k smallest Hamming distances for a set of binary query vectors, using counting max. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> – queries, size na * ncodes </p></li>
 <li><p><strong>b</strong> – database, size nb * ncodes </p></li>

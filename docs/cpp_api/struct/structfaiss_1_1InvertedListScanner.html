@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Struct faiss::InvertedListScanner &mdash; Faiss  documentation</title>
@@ -13,10 +13,10 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Faiss
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Faiss
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -247,9 +251,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../structlist.html">Struct list</a> &raquo;</li>
-      <li>Struct faiss::InvertedListScanner</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../structlist.html">Struct list</a></li>
+      <li class="breadcrumb-item active">Struct faiss::InvertedListScanner</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/cpp_api/struct/structfaiss_1_1InvertedListScanner.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -260,10 +264,10 @@
            <div itemprop="articleBody">
              
   <section id="struct-faiss-invertedlistscanner">
-<h1>Struct faiss::InvertedListScanner<a class="headerlink" href="#struct-faiss-invertedlistscanner" title="Permalink to this headline"></a></h1>
+<h1>Struct faiss::InvertedListScanner<a class="headerlink" href="#struct-faiss-invertedlistscanner" title="Permalink to this heading"></a></h1>
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss19InvertedListScannerE">
-<span id="_CPPv3N5faiss19InvertedListScannerE"></span><span id="_CPPv2N5faiss19InvertedListScannerE"></span><span id="faiss::InvertedListScanner"></span><span class="target" id="structfaiss_1_1InvertedListScanner"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../file/AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">InvertedListScanner</span></span></span><br /></dt>
+<span id="_CPPv3N5faiss19InvertedListScannerE"></span><span id="_CPPv2N5faiss19InvertedListScannerE"></span><span id="faiss::InvertedListScanner"></span><span class="target" id="structfaiss_1_1InvertedListScanner"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InvertedListScanner</span></span></span><br /></dt>
 <dd><p>Object that handles a query. The inverted lists to scan are provided externally. The object has a lot of state, but distance_to_code and scan_codes can be called in multiple threads </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
@@ -298,7 +302,7 @@
 <span id="_CPPv3NK5faiss19InvertedListScanner10scan_codesE6size_tPK7uint8_tPK5idx_tPfP5idx_t6size_t"></span><span id="_CPPv2NK5faiss19InvertedListScanner10scan_codesE6size_tPK7uint8_tPK5idx_tPfP5idx_t6size_t"></span><span id="faiss::InvertedListScanner::scan_codes__s.uint8_tCP.idx_tCP.floatP.idx_tP.sC"></span><span class="target" id="structfaiss_1_1InvertedListScanner_1ab50ad33ecf0080ca218b27aa2698329e"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">scan_codes</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">codes</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../file/IndexIVF_8h.html#_CPPv4N5faiss19InvertedListScanner5idx_tE" title="faiss::InvertedListScanner::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ids</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distances</span></span>, <a class="reference internal" href="../file/IndexIVF_8h.html#_CPPv4N5faiss19InvertedListScanner5idx_tE" title="faiss::InvertedListScanner::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">labels</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
 <dd><p>scan a set of codes, compute distances to current query and update heap of results if necessary. Default implemetation calls distance_to_code.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – number of codes to scan </p></li>
 <li><p><strong>codes</strong> – codes to scan (n * code_size) </p></li>
@@ -308,7 +312,7 @@
 <li><p><strong>k</strong> – heap size </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>number of heap updates performed </p>
 </dd>
 </dl>

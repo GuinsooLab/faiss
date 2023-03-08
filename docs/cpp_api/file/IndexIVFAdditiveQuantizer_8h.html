@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>File IndexIVFAdditiveQuantizer.h &mdash; Faiss  documentation</title>
@@ -13,10 +13,10 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Faiss
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Faiss
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -191,9 +195,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../filelist.html">File list</a> &raquo;</li>
-      <li>File IndexIVFAdditiveQuantizer.h</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../filelist.html">File list</a></li>
+      <li class="breadcrumb-item active">File IndexIVFAdditiveQuantizer.h</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/cpp_api/file/IndexIVFAdditiveQuantizer_8h.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -204,7 +208,7 @@
            <div itemprop="articleBody">
              
   <section id="file-indexivfadditivequantizer-h">
-<h1>File IndexIVFAdditiveQuantizer.h<a class="headerlink" href="#file-indexivfadditivequantizer-h" title="Permalink to this headline"></a></h1>
+<h1>File IndexIVFAdditiveQuantizer.h<a class="headerlink" href="#file-indexivfadditivequantizer-h" title="Permalink to this heading"></a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
@@ -262,7 +266,7 @@
 <span id="_CPPv3NK5faiss25IndexIVFAdditiveQuantizer14encode_vectorsE5idx_tPKfPK5idx_tP7uint8_tb"></span><span id="_CPPv2NK5faiss25IndexIVFAdditiveQuantizer14encode_vectorsE5idx_tPKfPK5idx_tP7uint8_tb"></span><span id="faiss::IndexIVFAdditiveQuantizer::encode_vectors__idx_t.floatCP.idx_tCP.uint8_tP.bC"></span><span class="target" id="structfaiss_1_1IndexIVFAdditiveQuantizer_1a0500e17324cd24817e7832aac8fae5d7"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">encode_vectors</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss25IndexIVFAdditiveQuantizer5idx_tE" title="faiss::IndexIVFAdditiveQuantizer::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss25IndexIVFAdditiveQuantizer5idx_tE" title="faiss::IndexIVFAdditiveQuantizer::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">list_nos</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">codes</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">include_listnos</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss25IndexIVFAdditiveQuantizer14encode_vectorsE5idx_tPKfPK5idx_tP7uint8_tb" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Encodes a set of vectors as they would appear in the inverted lists</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>list_nos</strong> – inverted list ids as returned by the quantizer (size n). -1s are ignored. </p></li>
 <li><p><strong>codes</strong> – output codes, size n * code_size </p></li>
@@ -326,7 +330,7 @@
 <span id="_CPPv3N5faiss28IndexIVFLocalSearchQuantizer28IndexIVFLocalSearchQuantizerEP5Index6size_t6size_t6size_t6size_t10MetricType13Search_type_t"></span><span id="_CPPv2N5faiss28IndexIVFLocalSearchQuantizer28IndexIVFLocalSearchQuantizerEP5Index6size_t6size_t6size_t6size_t10MetricType13Search_type_t"></span><span id="faiss::IndexIVFLocalSearchQuantizer::IndexIVFLocalSearchQuantizer__IndexP.s.s.s.s.MetricType.Search_type_t"></span><span class="target" id="structfaiss_1_1IndexIVFLocalSearchQuantizer_1a1cad5412f87e8732dfd32497806199bd"></span><span class="sig-name descname"><span class="n"><span class="pre">IndexIVFLocalSearchQuantizer</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">quantizer</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">d</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nlist</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">M</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nbits</span></span>, <a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss10MetricTypeE" title="faiss::MetricType"><span class="n"><span class="pre">MetricType</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">metric</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss10MetricType9METRIC_L2E" title="faiss::METRIC_L2"><span class="n"><span class="pre">METRIC_L2</span></span></a>, <a class="reference internal" href="#_CPPv4N5faiss28IndexIVFLocalSearchQuantizer13Search_type_tE" title="faiss::IndexIVFLocalSearchQuantizer::Search_type_t"><span class="n"><span class="pre">Search_type_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">search_type</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">AdditiveQuantizer</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ST_decompress</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss28IndexIVFLocalSearchQuantizer28IndexIVFLocalSearchQuantizerEP5Index6size_t6size_t6size_t6size_t10MetricType13Search_type_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Constructor.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>d</strong> – dimensionality of the input vectors </p></li>
 <li><p><strong>M</strong> – number of subquantizers </p></li>
@@ -357,7 +361,7 @@
 <span id="_CPPv3NK5faiss28IndexIVFLocalSearchQuantizer14encode_vectorsE5idx_tPKfPK5idx_tP7uint8_tb"></span><span id="_CPPv2NK5faiss28IndexIVFLocalSearchQuantizer14encode_vectorsE5idx_tPKfPK5idx_tP7uint8_tb"></span><span id="faiss::IndexIVFLocalSearchQuantizer::encode_vectors__idx_t.floatCP.idx_tCP.uint8_tP.bC"></span><span class="target" id="structfaiss_1_1IndexIVFAdditiveQuantizer_1a0500e17324cd24817e7832aac8fae5d7"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">encode_vectors</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss28IndexIVFLocalSearchQuantizer5idx_tE" title="faiss::IndexIVFLocalSearchQuantizer::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss28IndexIVFLocalSearchQuantizer5idx_tE" title="faiss::IndexIVFLocalSearchQuantizer::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">list_nos</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">codes</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">include_listnos</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss28IndexIVFLocalSearchQuantizer14encode_vectorsE5idx_tPKfPK5idx_tP7uint8_tb" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Encodes a set of vectors as they would appear in the inverted lists</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>list_nos</strong> – inverted list ids as returned by the quantizer (size n). -1s are ignored. </p></li>
 <li><p><strong>codes</strong> – output codes, size n * code_size </p></li>
@@ -422,7 +426,7 @@
 <span id="_CPPv3N5faiss25IndexIVFResidualQuantizer25IndexIVFResidualQuantizerEP5Index6size_t6size_tRKNSt6vectorI6size_tEE10MetricType13Search_type_t"></span><span id="_CPPv2N5faiss25IndexIVFResidualQuantizer25IndexIVFResidualQuantizerEP5Index6size_t6size_tRKNSt6vectorI6size_tEE10MetricType13Search_type_t"></span><span id="faiss::IndexIVFResidualQuantizer::IndexIVFResidualQuantizer__IndexP.s.s.std::vector:s:CR.MetricType.Search_type_t"></span><span class="target" id="structfaiss_1_1IndexIVFResidualQuantizer_1a432b4e49a9c07e15ab31c88b8fa50074"></span><span class="sig-name descname"><span class="n"><span class="pre">IndexIVFResidualQuantizer</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">quantizer</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">d</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nlist</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">size_t</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">nbits</span></span>, <a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss10MetricTypeE" title="faiss::MetricType"><span class="n"><span class="pre">MetricType</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">metric</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss10MetricType9METRIC_L2E" title="faiss::METRIC_L2"><span class="n"><span class="pre">METRIC_L2</span></span></a>, <a class="reference internal" href="#_CPPv4N5faiss25IndexIVFResidualQuantizer13Search_type_tE" title="faiss::IndexIVFResidualQuantizer::Search_type_t"><span class="n"><span class="pre">Search_type_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">search_type</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">AdditiveQuantizer</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ST_decompress</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss25IndexIVFResidualQuantizer25IndexIVFResidualQuantizerEP5Index6size_t6size_tRKNSt6vectorI6size_tEE10MetricType13Search_type_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Constructor.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>d</strong> – dimensionality of the input vectors </p></li>
 <li><p><strong>M</strong> – number of subquantizers </p></li>
@@ -458,7 +462,7 @@
 <span id="_CPPv3NK5faiss25IndexIVFResidualQuantizer14encode_vectorsE5idx_tPKfPK5idx_tP7uint8_tb"></span><span id="_CPPv2NK5faiss25IndexIVFResidualQuantizer14encode_vectorsE5idx_tPKfPK5idx_tP7uint8_tb"></span><span id="faiss::IndexIVFResidualQuantizer::encode_vectors__idx_t.floatCP.idx_tCP.uint8_tP.bC"></span><span class="target" id="structfaiss_1_1IndexIVFAdditiveQuantizer_1a0500e17324cd24817e7832aac8fae5d7"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">encode_vectors</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss25IndexIVFResidualQuantizer5idx_tE" title="faiss::IndexIVFResidualQuantizer::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss25IndexIVFResidualQuantizer5idx_tE" title="faiss::IndexIVFResidualQuantizer::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">list_nos</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">codes</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">include_listnos</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss25IndexIVFResidualQuantizer14encode_vectorsE5idx_tPKfPK5idx_tP7uint8_tb" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Encodes a set of vectors as they would appear in the inverted lists</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>list_nos</strong> – inverted list ids as returned by the quantizer (size n). -1s are ignored. </p></li>
 <li><p><strong>codes</strong> – output codes, size n * code_size </p></li>

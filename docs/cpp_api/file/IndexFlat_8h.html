@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>File IndexFlat.h &mdash; Faiss  documentation</title>
@@ -13,10 +13,10 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Faiss
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Faiss
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -191,9 +195,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../filelist.html">File list</a> &raquo;</li>
-      <li>File IndexFlat.h</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../filelist.html">File list</a></li>
+      <li class="breadcrumb-item active">File IndexFlat.h</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/cpp_api/file/IndexFlat_8h.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -204,7 +208,7 @@
            <div itemprop="articleBody">
              
   <section id="file-indexflat-h">
-<h1>File IndexFlat.h<a class="headerlink" href="#file-indexflat-h" title="Permalink to this headline"></a></h1>
+<h1>File IndexFlat.h<a class="headerlink" href="#file-indexflat-h" title="Permalink to this heading"></a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
@@ -244,7 +248,7 @@
 <dd><p>query n vectors of dimension d to the index.</p>
 <p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
 <li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
@@ -260,7 +264,7 @@
 <dd><p>query n vectors of dimension d to the index.</p>
 <p>return all vectors with distance &lt; radius. Note that many indexes do not implement the range_search (only the k-NN search is mandatory).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
 <li><p><strong>radius</strong> – search radius </p></li>
@@ -276,7 +280,7 @@
 <dd><p>Reconstruct a stored vector (or an approximation if lossy coding)</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d) </p></li>
@@ -290,7 +294,7 @@
 <span id="_CPPv3NK5faiss9IndexFlat23compute_distance_subsetE5idx_tPKf5idx_tPfPK5idx_t"></span><span id="_CPPv2NK5faiss9IndexFlat23compute_distance_subsetE5idx_tPKf5idx_tPfPK5idx_t"></span><span id="faiss::IndexFlat::compute_distance_subset__idx_t.floatCP.idx_t.floatP.idx_tCPC"></span><span class="target" id="structfaiss_1_1IndexFlat_1a6da84c9f0aca74a1d6b5130478d83357"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">compute_distance_subset</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss9IndexFlat5idx_tE" title="faiss::IndexFlat::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss9IndexFlat5idx_tE" title="faiss::IndexFlat::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distances</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss9IndexFlat5idx_tE" title="faiss::IndexFlat::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">labels</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss9IndexFlat23compute_distance_subsetE5idx_tPKf5idx_tPfPK5idx_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>compute distance with a subset of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – query vectors, size n * d </p></li>
 <li><p><strong>labels</strong> – indices of the vectors that should be compared for each query vector, size n * k </p></li>
@@ -326,11 +330,11 @@
 <span id="_CPPv3NK5faiss9IndexFlat9sa_encodeE5idx_tPKfP7uint8_t"></span><span id="_CPPv2NK5faiss9IndexFlat9sa_encodeE5idx_tPKfP7uint8_t"></span><span id="faiss::IndexFlat::sa_encode__idx_t.floatCP.uint8_tPC"></span><span class="target" id="structfaiss_1_1IndexFlat_1aaa95cb6086e2889e1c3f4478e454bc67"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_encode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss9IndexFlat5idx_tE" title="faiss::IndexFlat::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">bytes</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss9IndexFlat9sa_encodeE5idx_tPKfP7uint8_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>encode a set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – number of vectors </p></li>
 <li><p><strong>x</strong> – input vectors, size n * d </p></li>
-<li><p><strong>bytes</strong> – output encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a> </p></li>
+<li><p><strong>bytes</strong> – output encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a></p></li>
 </ul>
 </dd>
 </dl>
@@ -341,10 +345,10 @@
 <span id="_CPPv3NK5faiss9IndexFlat9sa_decodeE5idx_tPK7uint8_tPf"></span><span id="_CPPv2NK5faiss9IndexFlat9sa_decodeE5idx_tPK7uint8_tPf"></span><span id="faiss::IndexFlat::sa_decode__idx_t.uint8_tCP.floatPC"></span><span class="target" id="structfaiss_1_1IndexFlat_1af84e108340092e5d3970ab8824a71658"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_decode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss9IndexFlat5idx_tE" title="faiss::IndexFlat::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">bytes</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss9IndexFlat9sa_decodeE5idx_tPK7uint8_tPf" title="Permalink to this definition"></a><br /></dt>
 <dd><p>decode a set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – number of vectors </p></li>
-<li><p><strong>bytes</strong> – input encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a> </p></li>
+<li><p><strong>bytes</strong> – input encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a></p></li>
 <li><p><strong>x</strong> – output vectors, size n * d </p></li>
 </ul>
 </dd>
@@ -379,7 +383,7 @@
 <dd><p>Add n vectors of dimension d to the index.</p>
 <p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 This function slices the input vectors in chunks smaller than blocksize_add and calls add_core. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>x</strong> – input matrix, size n * d </p>
 </dd>
 </dl>
@@ -403,7 +407,7 @@
 <dd><p>query n vectors of dimension d to the index.</p>
 <p>return all vectors with distance &lt; radius. Note that many indexes do not implement the range_search (only the k-NN search is mandatory).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
 <li><p><strong>radius</strong> – search radius </p></li>
@@ -419,7 +423,7 @@
 <dd><p>Reconstruct a stored vector (or an approximation if lossy coding)</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d) </p></li>
@@ -433,7 +437,7 @@
 <span id="_CPPv3NK5faiss11IndexFlat1D23compute_distance_subsetE5idx_tPKf5idx_tPfPK5idx_t"></span><span id="_CPPv2NK5faiss11IndexFlat1D23compute_distance_subsetE5idx_tPKf5idx_tPfPK5idx_t"></span><span id="faiss::IndexFlat1D::compute_distance_subset__idx_t.floatCP.idx_t.floatP.idx_tCPC"></span><span class="target" id="structfaiss_1_1IndexFlat_1a6da84c9f0aca74a1d6b5130478d83357"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">compute_distance_subset</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlat1D5idx_tE" title="faiss::IndexFlat1D::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlat1D5idx_tE" title="faiss::IndexFlat1D::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distances</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlat1D5idx_tE" title="faiss::IndexFlat1D::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">labels</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss11IndexFlat1D23compute_distance_subsetE5idx_tPKf5idx_tPfPK5idx_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>compute distance with a subset of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – query vectors, size n * d </p></li>
 <li><p><strong>labels</strong> – indices of the vectors that should be compared for each query vector, size n * k </p></li>
@@ -464,11 +468,11 @@
 <span id="_CPPv3NK5faiss11IndexFlat1D9sa_encodeE5idx_tPKfP7uint8_t"></span><span id="_CPPv2NK5faiss11IndexFlat1D9sa_encodeE5idx_tPKfP7uint8_t"></span><span id="faiss::IndexFlat1D::sa_encode__idx_t.floatCP.uint8_tPC"></span><span class="target" id="structfaiss_1_1IndexFlat_1aaa95cb6086e2889e1c3f4478e454bc67"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_encode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlat1D5idx_tE" title="faiss::IndexFlat1D::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">bytes</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss11IndexFlat1D9sa_encodeE5idx_tPKfP7uint8_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>encode a set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – number of vectors </p></li>
 <li><p><strong>x</strong> – input vectors, size n * d </p></li>
-<li><p><strong>bytes</strong> – output encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a> </p></li>
+<li><p><strong>bytes</strong> – output encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a></p></li>
 </ul>
 </dd>
 </dl>
@@ -479,10 +483,10 @@
 <span id="_CPPv3NK5faiss11IndexFlat1D9sa_decodeE5idx_tPK7uint8_tPf"></span><span id="_CPPv2NK5faiss11IndexFlat1D9sa_decodeE5idx_tPK7uint8_tPf"></span><span id="faiss::IndexFlat1D::sa_decode__idx_t.uint8_tCP.floatPC"></span><span class="target" id="structfaiss_1_1IndexFlat_1af84e108340092e5d3970ab8824a71658"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_decode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlat1D5idx_tE" title="faiss::IndexFlat1D::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">bytes</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss11IndexFlat1D9sa_decodeE5idx_tPK7uint8_tPf" title="Permalink to this definition"></a><br /></dt>
 <dd><p>decode a set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – number of vectors </p></li>
-<li><p><strong>bytes</strong> – input encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a> </p></li>
+<li><p><strong>bytes</strong> – input encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a></p></li>
 <li><p><strong>x</strong> – output vectors, size n * d </p></li>
 </ul>
 </dd>
@@ -528,7 +532,7 @@
 <dd><p>query n vectors of dimension d to the index.</p>
 <p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
 <li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
@@ -544,7 +548,7 @@
 <dd><p>query n vectors of dimension d to the index.</p>
 <p>return all vectors with distance &lt; radius. Note that many indexes do not implement the range_search (only the k-NN search is mandatory).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
 <li><p><strong>radius</strong> – search radius </p></li>
@@ -560,7 +564,7 @@
 <dd><p>Reconstruct a stored vector (or an approximation if lossy coding)</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d) </p></li>
@@ -574,7 +578,7 @@
 <span id="_CPPv3NK5faiss11IndexFlatIP23compute_distance_subsetE5idx_tPKf5idx_tPfPK5idx_t"></span><span id="_CPPv2NK5faiss11IndexFlatIP23compute_distance_subsetE5idx_tPKf5idx_tPfPK5idx_t"></span><span id="faiss::IndexFlatIP::compute_distance_subset__idx_t.floatCP.idx_t.floatP.idx_tCPC"></span><span class="target" id="structfaiss_1_1IndexFlat_1a6da84c9f0aca74a1d6b5130478d83357"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">compute_distance_subset</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlatIP5idx_tE" title="faiss::IndexFlatIP::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlatIP5idx_tE" title="faiss::IndexFlatIP::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distances</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlatIP5idx_tE" title="faiss::IndexFlatIP::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">labels</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss11IndexFlatIP23compute_distance_subsetE5idx_tPKf5idx_tPfPK5idx_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>compute distance with a subset of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – query vectors, size n * d </p></li>
 <li><p><strong>labels</strong> – indices of the vectors that should be compared for each query vector, size n * k </p></li>
@@ -605,11 +609,11 @@
 <span id="_CPPv3NK5faiss11IndexFlatIP9sa_encodeE5idx_tPKfP7uint8_t"></span><span id="_CPPv2NK5faiss11IndexFlatIP9sa_encodeE5idx_tPKfP7uint8_t"></span><span id="faiss::IndexFlatIP::sa_encode__idx_t.floatCP.uint8_tPC"></span><span class="target" id="structfaiss_1_1IndexFlat_1aaa95cb6086e2889e1c3f4478e454bc67"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_encode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlatIP5idx_tE" title="faiss::IndexFlatIP::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">bytes</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss11IndexFlatIP9sa_encodeE5idx_tPKfP7uint8_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>encode a set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – number of vectors </p></li>
 <li><p><strong>x</strong> – input vectors, size n * d </p></li>
-<li><p><strong>bytes</strong> – output encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a> </p></li>
+<li><p><strong>bytes</strong> – output encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a></p></li>
 </ul>
 </dd>
 </dl>
@@ -620,10 +624,10 @@
 <span id="_CPPv3NK5faiss11IndexFlatIP9sa_decodeE5idx_tPK7uint8_tPf"></span><span id="_CPPv2NK5faiss11IndexFlatIP9sa_decodeE5idx_tPK7uint8_tPf"></span><span id="faiss::IndexFlatIP::sa_decode__idx_t.uint8_tCP.floatPC"></span><span class="target" id="structfaiss_1_1IndexFlat_1af84e108340092e5d3970ab8824a71658"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_decode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlatIP5idx_tE" title="faiss::IndexFlatIP::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">bytes</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss11IndexFlatIP9sa_decodeE5idx_tPK7uint8_tPf" title="Permalink to this definition"></a><br /></dt>
 <dd><p>decode a set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – number of vectors </p></li>
-<li><p><strong>bytes</strong> – input encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a> </p></li>
+<li><p><strong>bytes</strong> – input encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a></p></li>
 <li><p><strong>x</strong> – output vectors, size n * d </p></li>
 </ul>
 </dd>
@@ -655,7 +659,7 @@
 <dd><p>query n vectors of dimension d to the index.</p>
 <p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
 <li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
@@ -671,7 +675,7 @@
 <dd><p>query n vectors of dimension d to the index.</p>
 <p>return all vectors with distance &lt; radius. Note that many indexes do not implement the range_search (only the k-NN search is mandatory).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
 <li><p><strong>radius</strong> – search radius </p></li>
@@ -687,7 +691,7 @@
 <dd><p>Reconstruct a stored vector (or an approximation if lossy coding)</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d) </p></li>
@@ -701,7 +705,7 @@
 <span id="_CPPv3NK5faiss11IndexFlatL223compute_distance_subsetE5idx_tPKf5idx_tPfPK5idx_t"></span><span id="_CPPv2NK5faiss11IndexFlatL223compute_distance_subsetE5idx_tPKf5idx_tPfPK5idx_t"></span><span id="faiss::IndexFlatL2::compute_distance_subset__idx_t.floatCP.idx_t.floatP.idx_tCPC"></span><span class="target" id="structfaiss_1_1IndexFlat_1a6da84c9f0aca74a1d6b5130478d83357"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">compute_distance_subset</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlatL25idx_tE" title="faiss::IndexFlatL2::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlatL25idx_tE" title="faiss::IndexFlatL2::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distances</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlatL25idx_tE" title="faiss::IndexFlatL2::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">labels</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss11IndexFlatL223compute_distance_subsetE5idx_tPKf5idx_tPfPK5idx_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>compute distance with a subset of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – query vectors, size n * d </p></li>
 <li><p><strong>labels</strong> – indices of the vectors that should be compared for each query vector, size n * k </p></li>
@@ -732,11 +736,11 @@
 <span id="_CPPv3NK5faiss11IndexFlatL29sa_encodeE5idx_tPKfP7uint8_t"></span><span id="_CPPv2NK5faiss11IndexFlatL29sa_encodeE5idx_tPKfP7uint8_t"></span><span id="faiss::IndexFlatL2::sa_encode__idx_t.floatCP.uint8_tPC"></span><span class="target" id="structfaiss_1_1IndexFlat_1aaa95cb6086e2889e1c3f4478e454bc67"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_encode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlatL25idx_tE" title="faiss::IndexFlatL2::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">bytes</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss11IndexFlatL29sa_encodeE5idx_tPKfP7uint8_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>encode a set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – number of vectors </p></li>
 <li><p><strong>x</strong> – input vectors, size n * d </p></li>
-<li><p><strong>bytes</strong> – output encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a> </p></li>
+<li><p><strong>bytes</strong> – output encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a></p></li>
 </ul>
 </dd>
 </dl>
@@ -747,10 +751,10 @@
 <span id="_CPPv3NK5faiss11IndexFlatL29sa_decodeE5idx_tPK7uint8_tPf"></span><span id="_CPPv2NK5faiss11IndexFlatL29sa_decodeE5idx_tPK7uint8_tPf"></span><span id="faiss::IndexFlatL2::sa_decode__idx_t.uint8_tCP.floatPC"></span><span class="target" id="structfaiss_1_1IndexFlat_1af84e108340092e5d3970ab8824a71658"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_decode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexFlatL25idx_tE" title="faiss::IndexFlatL2::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">bytes</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss11IndexFlatL29sa_decodeE5idx_tPK7uint8_tPf" title="Permalink to this definition"></a><br /></dt>
 <dd><p>decode a set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – number of vectors </p></li>
-<li><p><strong>bytes</strong> – input encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a> </p></li>
+<li><p><strong>bytes</strong> – input encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexScalarQuantizer.html#structfaiss_1_1IndexFlatCodes_1a7252bbbd4059cb1ea4b43e52eadc920a"><span class="std std-ref">sa_code_size()</span></a></p></li>
 <li><p><strong>x</strong> – output vectors, size n * d </p></li>
 </ul>
 </dd>

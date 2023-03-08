@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Namespace faiss::ivflib &mdash; Faiss  documentation</title>
@@ -13,10 +13,10 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Faiss
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Faiss
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -77,9 +81,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../namespacelist.html">Namespace list</a> &raquo;</li>
-      <li>Namespace faiss::ivflib</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../namespacelist.html">Namespace list</a></li>
+      <li class="breadcrumb-item active">Namespace faiss::ivflib</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/cpp_api/namespace/namespacefaiss_1_1ivflib.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -90,10 +94,10 @@
            <div itemprop="articleBody">
              
   <section id="namespace-faiss-ivflib">
-<h1>Namespace faiss::ivflib<a class="headerlink" href="#namespace-faiss-ivflib" title="Permalink to this headline"></a></h1>
+<h1>Namespace faiss::ivflib<a class="headerlink" href="#namespace-faiss-ivflib" title="Permalink to this heading"></a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss6ivflibE">
-<span id="_CPPv3N5faiss6ivflibE"></span><span id="_CPPv2N5faiss6ivflibE"></span><span id="faiss::ivflib"></span><span class="target" id="namespacefaiss_1_1ivflib"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../file/AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ivflib</span></span></span><br /></dt>
+<span id="_CPPv3N5faiss6ivflibE"></span><span id="_CPPv2N5faiss6ivflibE"></span><span id="faiss::ivflib"></span><span class="target" id="namespacefaiss_1_1ivflib"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ivflib</span></span></span><br /></dt>
 <dd><div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-typedefs">Typedefs</p>
 <dl class="cpp type">
@@ -138,7 +142,7 @@
 <span id="_CPPv3N5faiss6ivflib10merge_intoEP5IndexP5Indexb"></span><span id="_CPPv2N5faiss6ivflib10merge_intoEP5IndexP5Indexb"></span><span id="faiss::ivflib::merge_into__IndexP.IndexP.b"></span><span class="target" id="IVFlib_8h_1a342382b7b7a6c4e769a9b6bbfe8becaa"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">merge_into</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../file/Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">index0</span></span>, <a class="reference internal" href="../file/Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">index1</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">shift_ids</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Merge index1 into index0. Works on <a class="reference internal" href="../struct/structfaiss_1_1IndexIVF.html#structfaiss_1_1IndexIVF"><span class="std std-ref">IndexIVF</span></a>’s and <a class="reference internal" href="../struct/structfaiss_1_1IndexIVF.html#structfaiss_1_1IndexIVF"><span class="std std-ref">IndexIVF</span></a>’s embedded in a <a class="reference internal" href="../struct/structfaiss_1_1IndexPreTransform.html#structfaiss_1_1IndexPreTransform"><span class="std std-ref">IndexPreTransform</span></a>. On output, the index1 is empty.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>shift_ids</strong> – translate the ids from index1 to index0-&gt;prev_ntotal </p>
 </dd>
 </dl>
@@ -194,7 +198,7 @@
 <span id="_CPPv3N5faiss6ivflib32ivf_residual_add_from_flat_codesEP25IndexIVFResidualQuantizer6size_tPK7uint8_t7int64_t"></span><span id="_CPPv2N5faiss6ivflib32ivf_residual_add_from_flat_codesEP25IndexIVFResidualQuantizer6size_tPK7uint8_t7int64_t"></span><span id="faiss::ivflib::ivf_residual_add_from_flat_codes__IndexIVFResidualQuantizerP.s.uint8_tCP.int64_t"></span><span class="target" id="IVFlib_8h_1a981899051705c18c6cae85d1f81b8e68"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ivf_residual_add_from_flat_codes</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../file/IndexIVFAdditiveQuantizer_8h.html#_CPPv4N5faiss25IndexIVFResidualQuantizerE" title="faiss::IndexIVFResidualQuantizer"><span class="n"><span class="pre">IndexIVFResidualQuantizer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ivfrq</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ncode</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">codes</span></span>, <span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">code_size</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>add from codes. NB that the norm component is not used, so the code_size can be provided.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>ivfrq</strong> – index to populate with the codes </p></li>
 <li><p><strong>codes</strong> – codes to add, size (ncode, code_size) </p></li>
@@ -224,7 +228,7 @@
 <span id="_CPPv3N5faiss6ivflib18SlidingIndexWindow4stepEPK5Indexb"></span><span id="_CPPv2N5faiss6ivflib18SlidingIndexWindow4stepEPK5Indexb"></span><span id="faiss::ivflib::SlidingIndexWindow::step__IndexCP.b"></span><span class="target" id="structfaiss_1_1ivflib_1_1SlidingIndexWindow_1accf1c7b8de188b74de0d6827beceac7c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">step</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../file/Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">sub_index</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">remove_oldest</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Add one index to the current index and remove the oldest one.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>sub_index</strong> – slice to swap in (can be NULL) </p></li>
 <li><p><strong>remove_oldest</strong> – if true, remove the oldest slices </p></li>

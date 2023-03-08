@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>File Clustering.h &mdash; Faiss  documentation</title>
@@ -13,10 +13,10 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Faiss
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Faiss
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -191,9 +195,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../filelist.html">File list</a> &raquo;</li>
-      <li>File Clustering.h</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../filelist.html">File list</a></li>
+      <li class="breadcrumb-item active">File Clustering.h</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/cpp_api/file/Clustering_8h.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -204,7 +208,7 @@
            <div itemprop="articleBody">
              
   <section id="file-clustering-h">
-<h1>File Clustering.h<a class="headerlink" href="#file-clustering-h" title="Permalink to this headline"></a></h1>
+<h1>File Clustering.h<a class="headerlink" href="#file-clustering-h" title="Permalink to this heading"></a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
@@ -231,7 +235,7 @@
 <span id="_CPPv3N5faiss17kmeans_clusteringE6size_t6size_t6size_tPKfPf"></span><span id="_CPPv2N5faiss17kmeans_clusteringE6size_t6size_t6size_tPKfPf"></span><span id="faiss::kmeans_clustering__s.s.s.floatCP.floatP"></span><span class="target" id="namespacefaiss_1a38bd0dde8a1b229201a5fcb64d05daa6"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">kmeans_clustering</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">d</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">centroids</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss17kmeans_clusteringE6size_t6size_t6size_tPKfPf" title="Permalink to this definition"></a><br /></dt>
 <dd><p>simplified interface</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>d</strong> – dimension of the data </p></li>
 <li><p><strong>n</strong> – nb of training vectors </p></li>
@@ -240,7 +244,7 @@
 <li><p><strong>centroids</strong> – output centroids (size k * d) </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>final quantization error </p>
 </dd>
 </dl>
@@ -281,7 +285,7 @@
 <span id="_CPPv3N5faiss10Clustering5trainE5idx_tPKfRN5faiss5IndexEPKf"></span><span id="_CPPv2N5faiss10Clustering5trainE5idx_tPKfRN5faiss5IndexEPKf"></span><span id="faiss::Clustering::train__idx_t.floatCP.faiss::IndexR.floatCP"></span><span class="target" id="structfaiss_1_1Clustering_1a097ae80bb9d39da6657f35bd00da39f2"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">train</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N5faiss10Clustering5idx_tE" title="faiss::Clustering::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">index</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x_weights</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss10Clustering5trainE5idx_tPKfRN5faiss5IndexEPKf" title="Permalink to this definition"></a><br /></dt>
 <dd><p>run k-means training</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – training vectors, size n * d </p></li>
 <li><p><strong>index</strong> – index used for assignment </p></li>
@@ -297,7 +301,7 @@
 <dd><p>run with encoded vectors</p>
 <p>win addition to <a class="reference internal" href="../struct/structfaiss_1_1Clustering1D.html#structfaiss_1_1Clustering_1a097ae80bb9d39da6657f35bd00da39f2"><span class="std std-ref">train()</span></a>’s parameters takes a codec as parameter to decode the input vectors.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>codec</strong> – codec used to decode the vectors (nullptr = vectors are in fact floats) * </p>
 </dd>
 </dl>
@@ -451,7 +455,7 @@
 <span id="_CPPv3N5faiss12Clustering1D5trainE5idx_tPKfRN5faiss5IndexEPKf"></span><span id="_CPPv2N5faiss12Clustering1D5trainE5idx_tPKfRN5faiss5IndexEPKf"></span><span id="faiss::Clustering1D::train__idx_t.floatCP.faiss::IndexR.floatCP"></span><span class="target" id="structfaiss_1_1Clustering_1a097ae80bb9d39da6657f35bd00da39f2"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">train</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N5faiss12Clustering1D5idx_tE" title="faiss::Clustering1D::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">index</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x_weights</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss12Clustering1D5trainE5idx_tPKfRN5faiss5IndexEPKf" title="Permalink to this definition"></a><br /></dt>
 <dd><p>run k-means training</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – training vectors, size n * d </p></li>
 <li><p><strong>index</strong> – index used for assignment </p></li>
@@ -467,7 +471,7 @@
 <dd><p>run with encoded vectors</p>
 <p>win addition to <a class="reference internal" href="../struct/structfaiss_1_1Clustering1D.html#structfaiss_1_1Clustering_1a097ae80bb9d39da6657f35bd00da39f2"><span class="std std-ref">train()</span></a>’s parameters takes a codec as parameter to decode the input vectors.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>codec</strong> – codec used to decode the vectors (nullptr = vectors are in fact floats) * </p>
 </dd>
 </dl>
@@ -709,7 +713,7 @@
 <p>Nearest Neighbor Search”</p>
 </p>
 <p>Shicong Liu, Hongtao Lu, Junru Shao, AAAI’15</p>
-<p><a class="reference external" href="https://arxiv.org/abs/1509.05195">https://arxiv.org/abs/1509.05195</a> </p>
+<p><a class="reference external" href="https://arxiv.org/abs/1509.05195">https://arxiv.org/abs/1509.05195</a></p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
 <dl class="cpp type">

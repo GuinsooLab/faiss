@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>File IndexAdditiveQuantizerFastScan.h &mdash; Faiss  documentation</title>
@@ -13,10 +13,10 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Faiss
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Faiss
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -191,9 +195,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../filelist.html">File list</a> &raquo;</li>
-      <li>File IndexAdditiveQuantizerFastScan.h</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../filelist.html">File list</a></li>
+      <li class="breadcrumb-item active">File IndexAdditiveQuantizerFastScan.h</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/cpp_api/file/IndexAdditiveQuantizerFastScan_8h.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -204,7 +208,7 @@
            <div itemprop="articleBody">
              
   <section id="file-indexadditivequantizerfastscan-h">
-<h1>File IndexAdditiveQuantizerFastScan.h<a class="headerlink" href="#file-indexadditivequantizerfastscan-h" title="Permalink to this headline"></a></h1>
+<h1>File IndexAdditiveQuantizerFastScan.h<a class="headerlink" href="#file-indexadditivequantizerfastscan-h" title="Permalink to this heading"></a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
@@ -274,7 +278,7 @@
 <span id="_CPPv3N5faiss30IndexAdditiveQuantizerFastScan5trainE5idx_tPKf"></span><span id="_CPPv2N5faiss30IndexAdditiveQuantizerFastScan5trainE5idx_tPKf"></span><span id="faiss::IndexAdditiveQuantizerFastScan::train__idx_t.floatCP"></span><span class="target" id="structfaiss_1_1IndexAdditiveQuantizerFastScan_1ac209f095ccac62ca6cc86d24923471d3"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">train</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss30IndexAdditiveQuantizerFastScan5idx_tE" title="faiss::IndexAdditiveQuantizerFastScan::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss30IndexAdditiveQuantizerFastScan5trainE5idx_tPKf" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Perform training on a representative set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – nb of training vectors </p></li>
 <li><p><strong>x</strong> – training vecors, size n * d </p></li>
@@ -304,7 +308,7 @@
 <dd><p>query n vectors of dimension d to the index.</p>
 <p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
 <li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
@@ -320,7 +324,7 @@
 <dd><p>Decode a set of vectors.</p>
 <p>NOTE: The codes in the <a class="reference internal" href="../struct/structfaiss_1_1IndexAdditiveQuantizerFastScan.html#structfaiss_1_1IndexAdditiveQuantizerFastScan"><span class="std std-ref">IndexAdditiveQuantizerFastScan</span></a> object are non- contiguous. But this method requires a contiguous representation.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – number of vectors </p></li>
 <li><p><strong>bytes</strong> – input encoded vectors, size n * code_size </p></li>
@@ -374,7 +378,7 @@
 <span id="_CPPv3N5faiss33IndexLocalSearchQuantizerFastScan33IndexLocalSearchQuantizerFastScanEi6size_t6size_t10MetricType13Search_type_ti"></span><span id="_CPPv2N5faiss33IndexLocalSearchQuantizerFastScan33IndexLocalSearchQuantizerFastScanEi6size_t6size_t10MetricType13Search_type_ti"></span><span id="faiss::IndexLocalSearchQuantizerFastScan::IndexLocalSearchQuantizerFastScan__i.s.s.MetricType.Search_type_t.i"></span><span class="target" id="structfaiss_1_1IndexLocalSearchQuantizerFastScan_1aee456275ff062de2d3207eef7f9f17fb"></span><span class="sig-name descname"><span class="n"><span class="pre">IndexLocalSearchQuantizerFastScan</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">d</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">M</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nbits</span></span>, <a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss10MetricTypeE" title="faiss::MetricType"><span class="n"><span class="pre">MetricType</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">metric</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss10MetricType9METRIC_L2E" title="faiss::METRIC_L2"><span class="n"><span class="pre">METRIC_L2</span></span></a>, <a class="reference internal" href="#_CPPv4N5faiss33IndexLocalSearchQuantizerFastScan13Search_type_tE" title="faiss::IndexLocalSearchQuantizerFastScan::Search_type_t"><span class="n"><span class="pre">Search_type_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">search_type</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">AdditiveQuantizer</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ST_norm_lsq2x4</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bbs</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">32</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss33IndexLocalSearchQuantizerFastScan33IndexLocalSearchQuantizerFastScanEi6size_t6size_t10MetricType13Search_type_ti" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Constructor.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>d</strong> – dimensionality of the input vectors </p></li>
 <li><p><strong>M</strong> – number of subquantizers </p></li>
@@ -404,7 +408,7 @@
 <span id="_CPPv3N5faiss33IndexLocalSearchQuantizerFastScan5trainE5idx_tPKf"></span><span id="_CPPv2N5faiss33IndexLocalSearchQuantizerFastScan5trainE5idx_tPKf"></span><span id="faiss::IndexLocalSearchQuantizerFastScan::train__idx_t.floatCP"></span><span class="target" id="structfaiss_1_1IndexAdditiveQuantizerFastScan_1ac209f095ccac62ca6cc86d24923471d3"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">train</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss33IndexLocalSearchQuantizerFastScan5idx_tE" title="faiss::IndexLocalSearchQuantizerFastScan::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss33IndexLocalSearchQuantizerFastScan5trainE5idx_tPKf" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Perform training on a representative set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – nb of training vectors </p></li>
 <li><p><strong>x</strong> – training vecors, size n * d </p></li>
@@ -434,7 +438,7 @@
 <dd><p>query n vectors of dimension d to the index.</p>
 <p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
 <li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
@@ -450,7 +454,7 @@
 <dd><p>Decode a set of vectors.</p>
 <p>NOTE: The codes in the <a class="reference internal" href="../struct/structfaiss_1_1IndexAdditiveQuantizerFastScan.html#structfaiss_1_1IndexAdditiveQuantizerFastScan"><span class="std std-ref">IndexAdditiveQuantizerFastScan</span></a> object are non- contiguous. But this method requires a contiguous representation.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – number of vectors </p></li>
 <li><p><strong>bytes</strong> – input encoded vectors, size n * code_size </p></li>
@@ -512,7 +516,7 @@
 <span id="_CPPv3N5faiss30IndexResidualQuantizerFastScan30IndexResidualQuantizerFastScanEi6size_t6size_t10MetricType13Search_type_ti"></span><span id="_CPPv2N5faiss30IndexResidualQuantizerFastScan30IndexResidualQuantizerFastScanEi6size_t6size_t10MetricType13Search_type_ti"></span><span id="faiss::IndexResidualQuantizerFastScan::IndexResidualQuantizerFastScan__i.s.s.MetricType.Search_type_t.i"></span><span class="target" id="structfaiss_1_1IndexResidualQuantizerFastScan_1a6aea7fed0c36dbdc75a0fa6fac3fb522"></span><span class="sig-name descname"><span class="n"><span class="pre">IndexResidualQuantizerFastScan</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">d</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">M</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nbits</span></span>, <a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss10MetricTypeE" title="faiss::MetricType"><span class="n"><span class="pre">MetricType</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">metric</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss10MetricType9METRIC_L2E" title="faiss::METRIC_L2"><span class="n"><span class="pre">METRIC_L2</span></span></a>, <a class="reference internal" href="#_CPPv4N5faiss30IndexResidualQuantizerFastScan13Search_type_tE" title="faiss::IndexResidualQuantizerFastScan::Search_type_t"><span class="n"><span class="pre">Search_type_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">search_type</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">AdditiveQuantizer</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ST_norm_rq2x4</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bbs</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">32</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss30IndexResidualQuantizerFastScan30IndexResidualQuantizerFastScanEi6size_t6size_t10MetricType13Search_type_ti" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Constructor.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>d</strong> – dimensionality of the input vectors </p></li>
 <li><p><strong>M</strong> – number of subquantizers </p></li>
@@ -542,7 +546,7 @@
 <span id="_CPPv3N5faiss30IndexResidualQuantizerFastScan5trainE5idx_tPKf"></span><span id="_CPPv2N5faiss30IndexResidualQuantizerFastScan5trainE5idx_tPKf"></span><span id="faiss::IndexResidualQuantizerFastScan::train__idx_t.floatCP"></span><span class="target" id="structfaiss_1_1IndexAdditiveQuantizerFastScan_1ac209f095ccac62ca6cc86d24923471d3"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">train</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss30IndexResidualQuantizerFastScan5idx_tE" title="faiss::IndexResidualQuantizerFastScan::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss30IndexResidualQuantizerFastScan5trainE5idx_tPKf" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Perform training on a representative set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – nb of training vectors </p></li>
 <li><p><strong>x</strong> – training vecors, size n * d </p></li>
@@ -572,7 +576,7 @@
 <dd><p>query n vectors of dimension d to the index.</p>
 <p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
 <li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
@@ -588,7 +592,7 @@
 <dd><p>Decode a set of vectors.</p>
 <p>NOTE: The codes in the <a class="reference internal" href="../struct/structfaiss_1_1IndexAdditiveQuantizerFastScan.html#structfaiss_1_1IndexAdditiveQuantizerFastScan"><span class="std std-ref">IndexAdditiveQuantizerFastScan</span></a> object are non- contiguous. But this method requires a contiguous representation.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – number of vectors </p></li>
 <li><p><strong>bytes</strong> – input encoded vectors, size n * code_size </p></li>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class faiss::gpu::GpuIndexBinaryFlat &mdash; Faiss  documentation</title>
@@ -13,10 +13,10 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Faiss
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Faiss
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -89,9 +93,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../classlist.html">Class list</a> &raquo;</li>
-      <li>Class faiss::gpu::GpuIndexBinaryFlat</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../classlist.html">Class list</a></li>
+      <li class="breadcrumb-item active">Class faiss::gpu::GpuIndexBinaryFlat</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/cpp_api/class/classfaiss_1_1gpu_1_1GpuIndexBinaryFlat.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -102,10 +106,10 @@
            <div itemprop="articleBody">
              
   <section id="class-faiss-gpu-gpuindexbinaryflat">
-<h1>Class faiss::gpu::GpuIndexBinaryFlat<a class="headerlink" href="#class-faiss-gpu-gpuindexbinaryflat" title="Permalink to this headline"></a></h1>
+<h1>Class faiss::gpu::GpuIndexBinaryFlat<a class="headerlink" href="#class-faiss-gpu-gpuindexbinaryflat" title="Permalink to this heading"></a></h1>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu18GpuIndexBinaryFlatE">
-<span id="_CPPv3N5faiss3gpu18GpuIndexBinaryFlatE"></span><span id="_CPPv2N5faiss3gpu18GpuIndexBinaryFlatE"></span><span id="faiss::gpu::GpuIndexBinaryFlat"></span><span class="target" id="classfaiss_1_1gpu_1_1GpuIndexBinaryFlat"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../file/AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../file/DeviceUtils_8h.html#_CPPv4N5faiss3gpuE" title="faiss::gpu"><span class="n"><span class="pre">gpu</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GpuIndexBinaryFlat</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="../file/AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../file/IndexBinary_8h.html#_CPPv4N5faiss11IndexBinaryE" title="faiss::IndexBinary"><span class="n"><span class="pre">IndexBinary</span></span></a><a class="headerlink" href="#_CPPv4N5faiss3gpu18GpuIndexBinaryFlatE" title="Permalink to this definition"></a><br /></dt>
+<span id="_CPPv3N5faiss3gpu18GpuIndexBinaryFlatE"></span><span id="_CPPv2N5faiss3gpu18GpuIndexBinaryFlatE"></span><span id="faiss::gpu::GpuIndexBinaryFlat"></span><span class="target" id="classfaiss_1_1gpu_1_1GpuIndexBinaryFlat"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GpuIndexBinaryFlat</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="../file/AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../file/IndexBinary_8h.html#_CPPv4N5faiss11IndexBinaryE" title="faiss::IndexBinary"><span class="n"><span class="pre">IndexBinary</span></span></a><a class="headerlink" href="#_CPPv4N5faiss3gpu18GpuIndexBinaryFlatE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>A GPU version of <a class="reference internal" href="../struct/structfaiss_1_1IndexBinaryFlat.html#structfaiss_1_1IndexBinaryFlat"><span class="std std-ref">IndexBinaryFlat</span></a> for brute-force comparison of bit vectors via Hamming distance </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
@@ -175,7 +179,7 @@
 <dd><p>Add n vectors of dimension d to the index.</p>
 <p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>x</strong> – input matrix, size n * d / 8 </p>
 </dd>
 </dl>
@@ -193,7 +197,7 @@
 <dd><p>Query n vectors of dimension d to the index.</p>
 <p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d / 8 </p></li>
 <li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
@@ -209,7 +213,7 @@
 <dd><p>Reconstruct a stored vector.</p>
 <p>This function may not be defined for some indexes. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d / 8) </p></li>
@@ -223,7 +227,7 @@
 <span id="_CPPv3N5faiss3gpu18GpuIndexBinaryFlat5trainE5idx_tPK7uint8_t"></span><span id="_CPPv2N5faiss3gpu18GpuIndexBinaryFlat5trainE5idx_tPK7uint8_t"></span><span id="faiss::gpu::GpuIndexBinaryFlat::train__idx_t.uint8_tCP"></span><span class="target" id="structfaiss_1_1IndexBinary_1a3c0ffd1655d8a5486660cb025340c9a4"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">train</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N5faiss3gpu18GpuIndexBinaryFlat5idx_tE" title="faiss::gpu::GpuIndexBinaryFlat::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss3gpu18GpuIndexBinaryFlat5trainE5idx_tPK7uint8_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Perform training on a representative set of vectors.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – nb of training vectors </p></li>
 <li><p><strong>x</strong> – training vecors, size n * d / 8 </p></li>
@@ -238,7 +242,7 @@
 <dd><p>Same as add, but stores xids instead of sequential ids.</p>
 <p>The default implementation fails with an assertion, as it is not supported by all indexes.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>xids</strong> – if non-null, ids to store for the vectors (size n) </p>
 </dd>
 </dl>
@@ -250,7 +254,7 @@
 <dd><p>Query n vectors of dimension d to the index.</p>
 <p>return all vectors with distance &lt; radius. Note that many indexes do not implement the range_search (only the k-NN search is mandatory). The distances are converted to float to reuse the RangeSearchResult structure, but they are integer. By convention, only distances &lt; radius (strict comparison) are returned, ie. radius = 0 does not return any result and 1 returns only exact same vectors.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d / 8 </p></li>
 <li><p><strong>radius</strong> – search radius </p></li>
@@ -266,7 +270,7 @@
 <dd><p>Return the indexes of the k vectors closest to the query x.</p>
 <p>This function is identical to search but only returns labels of neighbors. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d / 8 </p></li>
 <li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
@@ -287,7 +291,7 @@
 <dd><p>Reconstruct vectors i0 to i0 + ni - 1.</p>
 <p>This function may not be defined for some indexes. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>recons</strong> – reconstucted vectors (size ni * d / 8) </p>
 </dd>
 </dl>
@@ -299,7 +303,7 @@
 <dd><p>Similar to search, but also reconstructs the stored vectors (or an approximation in the case of lossy coding) for the search results.</p>
 <p>If there are not enough results for a query, the resulting array is padded with -1s.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>recons</strong> – reconstructed vectors size (n, k, d) </p>
 </dd>
 </dl>

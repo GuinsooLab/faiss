@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>File utils.h &mdash; Faiss  documentation</title>
@@ -13,10 +13,10 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Faiss
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Faiss
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -191,9 +195,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../filelist.html">File list</a> &raquo;</li>
-      <li>File utils.h</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../filelist.html">File list</a></li>
+      <li class="breadcrumb-item active">File utils.h</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/cpp_api/file/utils_8h.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -204,7 +208,7 @@
            <div itemprop="articleBody">
              
   <section id="file-utils-h">
-<h1>File utils.h<a class="headerlink" href="#file-utils-h" title="Permalink to this headline"></a></h1>
+<h1>File utils.h<a class="headerlink" href="#file-utils-h" title="Permalink to this heading"></a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
@@ -254,7 +258,7 @@
 <span id="_CPPv3N5faiss9fvec_maddE6size_tPKffPKfPf"></span><span id="_CPPv2N5faiss9fvec_maddE6size_tPKffPKfPf"></span><span id="faiss::fvec_madd__s.floatCP.float.floatCP.floatP"></span><span class="target" id="namespacefaiss_1a40328c31abd0bbba5bd95d7de951e847"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fvec_madd</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">a</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bf</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">b</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">c</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss9fvec_maddE6size_tPKffPKfPf" title="Permalink to this definition"></a><br /></dt>
 <dd><p>compute c := a + bf * b for a, b and c tables</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – size of the tables </p></li>
 <li><p><strong>a</strong> – size n </p></li>
@@ -270,7 +274,7 @@
 <span id="_CPPv3N5faiss20fvec_madd_and_argminE6size_tPKffPKfPf"></span><span id="_CPPv2N5faiss20fvec_madd_and_argminE6size_tPKffPKfPf"></span><span id="faiss::fvec_madd_and_argmin__s.floatCP.float.floatCP.floatP"></span><span class="target" id="namespacefaiss_1a9da63b8bb84460f5e8ccf8e17622cc7a"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fvec_madd_and_argmin</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">a</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bf</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">b</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">c</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss20fvec_madd_and_argminE6size_tPKffPKfPf" title="Permalink to this definition"></a><br /></dt>
 <dd><p>same as fvec_madd, also return index of the min of the result table </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>index of the min of table c </p>
 </dd>
 </dl>
@@ -286,7 +290,7 @@
 <span id="_CPPv3N5faiss9matrix_qrEiiPf"></span><span id="_CPPv2N5faiss9matrix_qrEiiPf"></span><span id="faiss::matrix_qr__i.i.floatP"></span><span class="target" id="namespacefaiss_1afb68fe89ad5e948974da1b70d7b4157c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">matrix_qr</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">m</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">a</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss9matrix_qrEiiPf" title="Permalink to this definition"></a><br /></dt>
 <dd><p>compute the Q of the QR decomposition for m &gt; n </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>a</strong> – size n * m: input matrix and output Q </p>
 </dd>
 </dl>
@@ -309,7 +313,7 @@
 <span id="_CPPv3N5faiss23merge_result_table_withE6size_t6size_tP7int64_tPfPK7int64_tPKfb7int64_t"></span><span id="_CPPv2N5faiss23merge_result_table_withE6size_t6size_tP7int64_tPfPK7int64_tPKfb7int64_t"></span><span id="faiss::merge_result_table_with__s.s.int64_tP.floatP.int64_tCP.floatCP.b.int64_t"></span><span class="target" id="namespacefaiss_1a7690bafb56c991da908ee11822c7a8da"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">merge_result_table_with</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">I0</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">D0</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">I1</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">D1</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">keep_min</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span>, <span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">translation</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss23merge_result_table_withE6size_t6size_tP7int64_tPfPK7int64_tPKfb7int64_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>merge a result table into another one</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>I0, D0</strong> – first result table, size (n, k) </p></li>
 <li><p><strong>I1, D1</strong> – second result table, size (n, k) </p></li>
@@ -317,7 +321,7 @@
 <li><p><strong>translation</strong> – add this value to all I1’s indexes </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>nb of values that were taken from the second table </p>
 </dd>
 </dl>
@@ -356,7 +360,7 @@
 <span id="_CPPv3N5faiss12bincode_histE6size_t6size_tPK7uint8_tPi"></span><span id="_CPPv2N5faiss12bincode_histE6size_t6size_tPK7uint8_tPi"></span><span id="faiss::bincode_hist__s.s.uint8_tCP.iP"></span><span class="target" id="namespacefaiss_1a154a47857ed321b9db91122770a16e09"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bincode_hist</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nbits</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">codes</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">hist</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss12bincode_histE6size_t6size_tPK7uint8_tPi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Compute histogram of bits on a code array</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>codes</strong> – size(n, nbits / 8) </p></li>
 <li><p><strong>hist</strong> – size(nbits): nb of 1s in the array of codes </p></li>
@@ -376,7 +380,7 @@
 <span id="_CPPv3N5faiss21fvecs_maybe_subsampleE6size_tP6size_t6size_tPKfb7int64_t"></span><span id="_CPPv2N5faiss21fvecs_maybe_subsampleE6size_tP6size_t6size_tPKfb7int64_t"></span><span id="faiss::fvecs_maybe_subsample__s.sP.s.floatCP.b.int64_t"></span><span class="target" id="namespacefaiss_1af851590d865ea2eae8dae3ae72406bfb"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">fvecs_maybe_subsample</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">d</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">n</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nmax</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">verbose</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span>, <span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">seed</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1234</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss21fvecs_maybe_subsampleE6size_tP6size_t6size_tPKfb7int64_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>random subsamples a set of vectors if there are too many of them</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>d</strong> – dimension of the vectors </p></li>
 <li><p><strong>n</strong> – on input: nb of input vectors, output: nb of output vectors </p></li>
@@ -385,7 +389,7 @@
 <li><p><strong>seed</strong> – random seed to use for sampling </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>x or an array allocated with new [] with *n vectors </p>
 </dd>
 </dl>
@@ -396,7 +400,7 @@
 <span id="_CPPv3N5faiss14binary_to_realE6size_tPK7uint8_tPf"></span><span id="_CPPv2N5faiss14binary_to_realE6size_tPK7uint8_tPf"></span><span id="faiss::binary_to_real__s.uint8_tCP.floatP"></span><span class="target" id="namespacefaiss_1ac8260e10cfeed08a4344b85845773e16"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">binary_to_real</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">d</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x_in</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x_out</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss14binary_to_realE6size_tPK7uint8_tPf" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Convert binary vector to +1/-1 valued float vector.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>d</strong> – dimension of the vector (multiple of 8) </p></li>
 <li><p><strong>x_in</strong> – input binary vector (uint8_t table of size d / 8) </p></li>
@@ -411,7 +415,7 @@
 <span id="_CPPv3N5faiss14real_to_binaryE6size_tPKfP7uint8_t"></span><span id="_CPPv2N5faiss14real_to_binaryE6size_tPKfP7uint8_t"></span><span id="faiss::real_to_binary__s.floatCP.uint8_tP"></span><span class="target" id="namespacefaiss_1ab491c9e2f77a750c9f0324bfe00e3e57"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">real_to_binary</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">d</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x_in</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x_out</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss14real_to_binaryE6size_tPKfP7uint8_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Convert float vector to binary vector. Components &gt; 0 are converted to 1, others to 0.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>d</strong> – dimension of the vector (multiple of 8) </p></li>
 <li><p><strong>x_in</strong> – input float vector (float table of size d) </p></li>

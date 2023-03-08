@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Struct faiss::detail::simdlib::is_simd256bit &mdash; Faiss  documentation</title>
@@ -13,10 +13,10 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Faiss
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Faiss
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -247,9 +251,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../structlist.html">Struct list</a> &raquo;</li>
-      <li>Struct faiss::detail::simdlib::is_simd256bit</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../structlist.html">Struct list</a></li>
+      <li class="breadcrumb-item active">Struct faiss::detail::simdlib::is_simd256bit</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/cpp_api/struct/structfaiss_1_1detail_1_1simdlib_1_1is__simd256bit.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -260,7 +264,7 @@
            <div itemprop="articleBody">
              
   <section id="struct-faiss-detail-simdlib-is-simd256bit">
-<h1>Struct faiss::detail::simdlib::is_simd256bit<a class="headerlink" href="#struct-faiss-detail-simdlib-is-simd256bit" title="Permalink to this headline"></a></h1>
+<h1>Struct faiss::detail::simdlib::is_simd256bit<a class="headerlink" href="#struct-faiss-detail-simdlib-is-simd256bit" title="Permalink to this heading"></a></h1>
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4I00EN5faiss6detail7simdlib13is_simd256bitE">
 <span id="_CPPv3I00EN5faiss6detail7simdlib13is_simd256bitE"></span><span id="_CPPv2I00EN5faiss6detail7simdlib13is_simd256bitE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">U</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">decltype</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="../file/simdlib__neon_8h.html#_CPPv4N5faiss6detail7simdlib14reinterpret_u8ERK12uint8x16x2_t" title="faiss::detail::simdlib::reinterpret_u8"><span class="n"><span class="pre">reinterpret_u8</span></span></a><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">declval</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../file/simdlib__neon_8h.html#_CPPv4I00EN5faiss6detail7simdlib13is_simd256bitE" title="faiss::detail::simdlib::is_simd256bit::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="structfaiss_1_1detail_1_1simdlib_1_1is__simd256bit"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">is_simd256bit</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">is_same</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">decltype</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="../file/simdlib__neon_8h.html#_CPPv4N5faiss6detail7simdlib14reinterpret_u8ERK12uint8x16x2_t" title="faiss::detail::simdlib::reinterpret_u8"><span class="n"><span class="pre">reinterpret_u8</span></span></a><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">declval</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../file/simdlib__neon_8h.html#_CPPv4I00EN5faiss6detail7simdlib13is_simd256bitE" title="faiss::detail::simdlib::is_simd256bit::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint8x16x2_t</span></span><span class="p"><span class="pre">&gt;</span></span><br /></dt>
